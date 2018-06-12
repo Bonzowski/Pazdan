@@ -2,9 +2,16 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <title>Dately</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -13,7 +20,7 @@
 
 <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <a href="https://www.google.com"><img src="google1.jpg" style="width:100%"></a>
+    <a href="https://www.google.com"><img src="https://odysseyonline-img.rbl.ms/simage/https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F03%2F12%2F6359333898992078951862085666_7014318-nice-girl.jpg/2000%2C2000/dAtopSB0l4laTWLN/img.jpg" style="width:100%"></a>
     <div class="text">Marta <br> Warszawa, 27 lat</div>
     <table border="3px" align="center">
       <tr>
@@ -29,14 +36,14 @@
       </tr>
     </table>
     <button class="button more_info">More information</button>
-    <button class="button button_no" align="center">X</button>
-    <button class="button button_yes">Y</button>
+    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
+    <button class="button button_yes" onclick="nextSlide()">Y</button>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <a href="https://www.google.com"><img src="google2.jpg" style="width:100%"></a>
-  <div class="text">Jan <br> Szczecin, 25 lat</div>
+  <a href="https://www.google.com"><img src="https://i.pinimg.com/originals/b8/d9/24/b8d924f457b5a4fd05de7f00120e3bc1.jpg" style="width:100%"></a>
+  <div class="text">Jessica <br> Szczecin, 25 lat</div>
     <table border="3px" align="center">
       <tr>
         <td rowspan="2">Lorem ipsum </td>
@@ -51,13 +58,13 @@
       </tr>
     </table>
     <button class="button more_info">More information</button>
-    <button class="button button_no" align="center">X</button>
-    <button class="button button_yes">Y</button>
+    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
+    <button class="button button_yes" onclick="nextSlide()">Y</button>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <a href="https://www.google.com"><img src="google3.jpg" style="width:100%"></a>
+  <a href="https://www.google.com"><img src="http://www.mashupamericans.com/wp-content/uploads/2014/07/WhenBeautyStandards_090814_Edited.jpg" style="width:100%"></a>
   <div class="text">Anna <br> Łódź, 29 lat</div>
     <table border="3px" align="center">
       <tr>
@@ -73,8 +80,8 @@
       </tr>
     </table>
     <button class="button more_info">More information</button>
-    <button class="button button_no" align="center">X</button>
-    <button class="button button_yes">Y</button>
+    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
+    <button class="button button_yes" onclick="nextSlide()">Y</button>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -100,6 +107,10 @@ function plusSlides(n) {
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+
+function nextSlide() {
+  showSlides(slideIndex += 1)
 }
 
 function showSlides(n) {

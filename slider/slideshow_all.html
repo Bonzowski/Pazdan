@@ -4,97 +4,151 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
   <title>Dately</title>
   <meta charset="utf-8">
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top justify-content-center">
+    <a class="navbar-brand" href="#">Dately</a> 
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="file:///Users/szymondawidow/Pazdan/slider/slideshow_all.html">Stack</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///Users/szymondawidow/Pazdan/inbox/inbox.html.html">Matches</a>
+      </li>
+    </ul>
+  </nav>
 
-<div class="slideshow-container">
+  <div class="slideshow-container ">
 
-<div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <a href="https://www.google.com"><img src="https://odysseyonline-img.rbl.ms/simage/https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F03%2F12%2F6359333898992078951862085666_7014318-nice-girl.jpg/2000%2C2000/dAtopSB0l4laTWLN/img.jpg" style="width:100%"></a>
-    <div class="text">Marta <br> Warszawa, 27 lat</div>
-    <table border="3px" align="center">
-      <tr>
-        <td rowspan="2">Lorem ipsum </td>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-      <tr>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-    </table>
-    <button class="button more_info">More information</button>
-    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
-    <button class="button button_yes" onclick="nextSlide()">Y</button>
-</div>
+    <div class="mySlides">
+        <div class="container">
+          <a href="https://www.google.com"><img src="https://odysseyonline-img.rbl.ms/simage/https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F03%2F12%2F6359333898992078951862085666_7014318-nice-girl.jpg/2000%2C2000/dAtopSB0l4laTWLN/img.jpg" style="width:100%"></a>
+          <div class="text-block">
+            <div class="image-text-1">
+               Marta <br> 
+            </div>
+            <div class="image-text-2">
+               Warszawa, 27 lat
+            </div>
+             
+          </div>
+        </div>
+        <div class="container">
+          <table border="3px" align="center">
+            <tr>
+              <td rowspan="2">Lorem ipsum </td>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+            <tr>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+          </table>
+          <button class="btn more_info">More information</button>
+          <button class="btn button_no" onclick="nextSlide()" align="center"><img class="icon" src="thumb-.png"></button>
+          <button class="btn button_yes" onclick="nextSlide()"><img class="icon" src="thumb+.png"></button>
+        </div>
+       </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <a href="https://www.google.com"><img src="https://i.pinimg.com/originals/b8/d9/24/b8d924f457b5a4fd05de7f00120e3bc1.jpg" style="width:100%"></a>
-  <div class="text">Jessica <br> Szczecin, 25 lat</div>
-    <table border="3px" align="center">
-      <tr>
-        <td rowspan="2">Lorem ipsum </td>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-      <tr>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-    </table>
-    <button class="button more_info">More information</button>
-    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
-    <button class="button button_yes" onclick="nextSlide()">Y</button>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <a href="https://www.google.com"><img src="http://www.mashupamericans.com/wp-content/uploads/2014/07/WhenBeautyStandards_090814_Edited.jpg" style="width:100%"></a>
-  <div class="text">Anna <br> Łódź, 29 lat</div>
-    <table border="3px" align="center">
-      <tr>
-        <td rowspan="2">Lorem ipsum </td>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-      <tr>
-        <td>Picture</td>
-        <td>Picture</td>
-        <td>Picture</td>
-      </tr>
-    </table>
-    <button class="button more_info">More information</button>
-    <button class="button button_no" onclick="nextSlide()" align="center">X</button>
-    <button class="button button_yes" onclick="nextSlide()">Y</button>
-</div>
+        <div class="mySlides">
+        <div class="container">
+          <a href="https://www.google.com"><img src="https://i.pinimg.com/originals/b8/d9/24/b8d924f457b5a4fd05de7f00120e3bc1.jpg" style="width:100%"></a>
+          <div class="text-block">
+            <div class="image-text-1">
+               Jessica <br> 
+            </div>
+            <div class="image-text-2">
+               Szczecin, 25 lat
+            </div>
+             
+          </div>
+        </div>
+        <div class="container">
+          <table border="3px" align="center">
+            <tr>
+              <td rowspan="2">Lorem ipsum </td>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+            <tr>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+          </table>
+          <button class="btn more_info">More information</button>
+          <button class="btn button_no" onclick="nextSlide()" align="center"><img class="icon" src="thumb-.png"></button>
+          <button class="btn button_yes" onclick="nextSlide()"><img class="icon" src="thumb+.png"></button>
+        </div>
+       </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
-<br>
+        <div class="mySlides">
+        <div class="container">
+          <a href="https://www.google.com"><img src="http://www.mashupamericans.com/wp-content/uploads/2014/07/WhenBeautyStandards_090814_Edited.jpg" style="width:100%"></a>
+          <div class="text-block">
+            <div class="image-text-1">
+               Anna <br> 
+            </div>
+            <div class="image-text-2">
+               Łódź, 29 lat
+            </div>
+             
+          </div>
+        </div>
+        <div class="container">
+          <table border="3px" align="center">
+            <tr>
+              <td rowspan="2">Lorem ipsum </td>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+            <tr>
+              <td>Picture</td>
+              <td>Picture</td>
+              <td>Picture</td>
+            </tr>
+          </table>
+          <button class="btn more_info">More information</button>
+          <button class="btn button_no" onclick="nextSlide()" align="center"><img class="icon" src="thumb-.png"></button>
+          <button class="btn button_yes" onclick="nextSlide()"><img class="icon" src="thumb+.png"></button>
+        </div>
+       </div>
+ 
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+
+  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br> -->
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+
+</body>
 
 <script>
 
@@ -129,6 +183,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }  
 </script>
-
-</body>
 </html> 

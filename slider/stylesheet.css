@@ -4,13 +4,64 @@
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+  
   margin: auto;
+  margin-top: 3%;
+  height: 80%
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+    width: 100%
+}
+
+.container2 {
+    position: relative;
+    text-align: center;
+   
+    width: 100%
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Hide the images by default */
 .mySlides {
     display: none;
     text-align: center;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 80px;
+    width: 100%
+    background-color:black;
+
+}
+
+.text-block {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.7)  ;
+    height: 30%
+    color: white;
+    align-content: left;
+    width: 97%;
+}
+
+.image-text-1 {
+  color: white;
+  position: relative;
+  font-size: 30;
+  margin-left: 0
+}
+
+.image-text-2 {
+  color: white;
+  position: relative;
+  font-size: 20;
+  margin-left: 0
 }
 
 /* Next & previous buttons */
@@ -42,14 +93,14 @@
 /* Caption text */
 .text {
   color: #E3085D;
-  background-color: lightgray;
+
   font-size: 20px;
   padding: 8px 12px;
   position: relative;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .identification {
@@ -74,16 +125,34 @@
     cursor: pointer;
   }
 
+  .btn {
+    background-color: white;
+    border: 1%;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .button_yes {
-    background-color: #4CAF50;
+   /* background-color: #4CAF50;*/
+   width:10%;
+  height:10%;
 }
 
 .button_no {
-    background-color: #E3085D;
+   /* background-color: #E3085D;*/
+   width:10%;
+  height:10%;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
 }
 
 .more_info {
-  background-color: lightblue;
+  background-color: rgb(209,30,54);
   width: 100%;
   display: block;
 }
